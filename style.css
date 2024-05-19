@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+video {
+  position: fixed; /* Make the video fixed to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire viewport and maintain aspect ratio */
+  z-index: -1; /* Place the video behind the content */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; 
+  position: relative; /* Make the container position relative */
+}
+
+.text-container {
+  margin-bottom: 20px;
+  
+}
+
+.logo-container {
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Align items horizontally */
+  /* height: 80vh; /* Set container height to 100% viewport height */ */
+}
+
+
+h1 {
+  color: #333;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container img {
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 440px; /* Adjust HKBTC text size to 30px */
+  }
+.logo-container img{
+width:50vw !important;
+}
+ 
+}
